@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/register', [UserController::class, 'register']); // Fix here
+Route::post('/register', [UserController::class, 'register']);
