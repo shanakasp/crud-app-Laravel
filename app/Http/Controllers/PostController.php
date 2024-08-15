@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function createPost(Request $request) {
-        $incommingFields = $request->validate([
+        $incomingFields = $request->validate([
             'title' => 'required',
             'body' => 'required',
         ]);
 
         $incomingFields['user_id'] = auth()->id();
 
-        $post = Post::create($incommingFields);
+        $post = Post::create($incomingFields);
 
         return response()->json([
             'message' => 'Post created successfully',
