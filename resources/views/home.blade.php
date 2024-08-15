@@ -78,6 +78,16 @@
     @csrf
     <button type="submit">Logout</button>
 </form>
+<div style="border: 3px solid blakc">
+<h2>Create a New Post</h2>
+
+<form action="/create-post" method ="POST">
+@csrf
+<input type="text" name="title" placeholder="Post Title" >
+<textarea name="body" placeholder="Body content..."></textarea>
+<button type="submit">Create Post</button>
+</form
+</div>
     @else
     <div class="container" id="box2">
         <h1>Register</h1>
