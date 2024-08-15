@@ -74,7 +74,10 @@
     @auth
 
     <p>Congrats you have logged in!</p>
-
+<form action="/logout" method="POST">
+    @csrf
+    <button type="submit">Logout</button>
+</form>
     @else
     <div class="container" id="box2">
         <h1>Register</h1>
