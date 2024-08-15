@@ -92,6 +92,19 @@
 
     </div>
 
+    <div class="container" id="box2">
+        <h1>Login</h1>
+
+        <form action="/login" method="POST">
+    @csrf
+    <input type="text" name="loginname" placeholder="Name" >
+
+    <input type="password" name="loginpassword" placeholder="Password" >
+    <button type="submit">Log in</button>
+</form>
+
+    </div>
+
     @endauth
 
 </body>
