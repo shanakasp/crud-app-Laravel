@@ -88,6 +88,17 @@
 <button type="submit">Create Post</button>
 </form
 </div>
+<div style="border: 3px solid blakc">
+    <h2>All Post</h2>
+@foreach ($posts as $post)
+<div style="background-color: gray ; padding:10px ; margin:10px;">
+<h3>
+    {{$post['title']}}</h3>
+{{$post['body']}}</div>
+@endforeach()
+
+</div>
+
     @else
     <div class="container" id="box2">
         <h1>Register</h1>
@@ -112,6 +123,8 @@
     <input type="password" name="loginpassword" placeholder="Password" >
     <button type="submit">Log in</button>
 </form>
+
+
 
     </div>
 
