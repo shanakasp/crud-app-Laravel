@@ -70,6 +70,12 @@
 </head>
 
 <body>
+
+    @auth
+
+    <p>Congrats you have logged in!</p>
+
+    @else
     <div class="container" id="box2">
         <h1>Register</h1>
 
@@ -82,6 +88,9 @@
 </form>
 
     </div>
+
+    @endauth
+
 </body>
 
 </html>
